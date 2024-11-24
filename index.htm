@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUUMAIZ.com</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- <script src="script.js"></script> -->
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="My brand logo.jpg" alt="Brand Logo" class="logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#" id="shop-btn">Shop</a></li> <!-- Shop button toggles product visibility -->
+        <li><a href="javascript:void(0);" id="aboutUsBtn">About Us</a></li>
+        <li><a href="#" id="contact-btn">Contact Us</a></li> <!-- Contact Us Button -->
+      </ul>
+      <div class="nav-buttons">
+        <!-- Sign Up Button -->
+        <li><a href="javascript:void(0);" onclick="toggleLoginForm()">Login</a></li>
+        <!-- <a href="#signup" class="btn btn-primary">Sign Up</a> -->
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-banner" id="home">
+    <div class="hero-content">
+        <h1><span>Humaiz</span> </h1>
+      <p>Where Men and Fashion Meets</p>
+      <div class="hero-buttons">
+        <a href="#shop" class="btn btn-primary">Shop Now</a>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-image">
+        <img src="ban.jpg" alt="Clothing Banner Image">
+      </div>
+  </section>
+
+
+<!-- product -->
+<div class="product-section">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="p5.jpg" alt="Product 1">
+        <h3>Men Suit</h3>
+        <p class="price">$29.99</p>
+        <p class="description">A product description is a piece of marketing copy that explains the features and benefits of a product to potential customers</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-item">
+        <img src="p6.jpg" alt="Product 2">
+        <h3>Men Stylish Duo</h3>
+        <p class="price">$39.99</p>
+        <p class="description">A product description is a piece of marketing copy that explains the features and benefits of a product to potential customers</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-item">
+        <img src="p1.jpg" alt="Product 3">
+        <h3>Women Jumper</h3>
+        <p class="price">$19.99</p>
+        <p class="description">A product description is a piece of marketing copy that explains the features and benefits of a product to potential customers</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+     <!-- Hidden products (displayed after clicking the "Shop Now" button) -->
+     <div class="product-item hidden">
+        <img src="path-to-product-image4.jpg" alt="Product 4">
+        <h3>Product Name 4</h3>
+        <p class="price">$49.99</p>
+        <p class="description">Description of Product 4.</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-item hidden">
+        <img src="path-to-product-image5.jpg" alt="Product 5">
+        <h3>Product Name 5</h3>
+        <p class="price">$59.99</p>
+        <p class="description">Description of Product 5.</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-item hidden">
+        <img src="path-to-product-image6.jpg" alt="Product 6">
+        <h3>Product Name 6</h3>
+        <p class="price">$24.99</p>
+        <p class="description">Description of Product 6.</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="script.js"></script> Link to your JS file -->
+
+ <!-- Contact -->
+<div id="contact-form-section" class="contact-form-section">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+<footer id="footer">
+    <div class="footer-container">
+        <!-- About Us Section -->
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We are a leading fashion e-commerce store, offering the latest trends in clothing. Explore our wide range of products that combine comfort and style.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact-form-section">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: support@HUMAIZ.com</p>
+            <p>Phone: +92-3467-483237</p>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Your Store. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- About Us Section (Hidden Initially) -->
+<div id="aboutUsSection" class="about-us-section">
+    <div class="about-us-container">
+        <!-- About Us Text -->
+        <div class="about-us-content">
+            <h1>About Us</h1>
+            <p>Welcome to Our Store! We are a leading fashion e-commerce store, bringing the latest styles straight to your door. We strive to offer the best shopping experience, with a wide variety of quality products.</p>
+        </div>
+
+        <!-- Store Location and Map -->
+        <div class="store-location">
+            <h2>Our Store Location</h2>
+            <p>Visit us at our headquarters:</p>
+            <p>Square mall fortress stadium, Lahore, Pakistan</p>
+
+            <!-- Google Map Embed -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.6477126515385!2d74.35874722516048!3d31.57167944731799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391902e5b4cbd85b%3A0xb9cceff0587b0294!2sLahore!5e0!3m2!1sen!2s!4v1632221063489!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"The best clothing store I've ever shopped at! Great quality and fast delivery. Highly recommend!"</p>
+                <span>- Sarah As.</span>
+            </div>
+            <div class="testimonial">
+                <p>"Excellent customer service! I found exactly what I was looking for, and the prices are great."</p>
+                <span>- Ahmed R.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Login Form Section -->
+<div id="loginForm" class="login-form-section">
+    <div class="login-form-container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <button class="close-btn" onclick="toggleLoginForm()">Close</button>
+    </div>
+</div>
+
+
+<!-- Sign Up Form Section -->
+<div id="signUpForm" class="sign-up-form-section">
+  <div class="sign-up-form-container">
+      <h2>Sign Up</h2>
+      <form action="/signup" method="POST">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          
+          <button type="submit" class="submit-btn">Sign Up</button>
+      </form>
+      <button class="close-btn" onclick="toggleSignUpForm()">Close</button>
+  </div>
+</div>
+
+<script>
+
+  
+
+  // Select the "Contact Us" button and the form section
+const contactBtn = document.getElementById("contact-btn");
+const contactFormSection = document.getElementById("contact-form-section");
+
+// Add event listener for the "Contact Us" button
+contactBtn.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+
+    // Toggle the visibility of the contact form section
+    if (contactFormSection.style.display === "none" || contactFormSection.style.display === "") {
+        contactFormSection.style.display = "block"; // Show the form
+        contactBtn.textContent = "Hide Form"; // Change button text
+    } else {
+        contactFormSection.style.display = "none"; // Hide the form
+        contactBtn.textContent = "Contact Us"; // Change button text back
+    }
+});
+
+// JavaScript to Toggle About Us Section
+document.getElementById('aboutUsBtn').addEventListener('click', function() {
+    var aboutUsSection = document.getElementById('aboutUsSection');
+    
+    // Toggle visibility of About Us section
+    if (aboutUsSection.style.display === 'none' || aboutUsSection.style.display === '') {
+        aboutUsSection.style.display = 'block';
+    } else {
+        aboutUsSection.style.display = 'none';
+    }
+});
+
+  // Toggle the visibility of the login form
+  function toggleLoginForm() {
+            const loginForm = document.getElementById('loginForm');
+            if (loginForm.style.display === 'block') {
+                loginForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'block';
+            }
+        }
+// Function to toggle the login form
+function toggleLoginForm() {
+    const loginForm = document.getElementById("loginForm");
+    if (loginForm.style.display === "flex") {
+        loginForm.style.display = "none"; // Hide the form
+    } else {
+        loginForm.style.display = "flex"; // Show the form
+        loginForm.style.justifyContent = "center"; // Center it
+        loginForm.style.alignItems = "center";
+    }
+}
+
+// Function to toggle the Sign Up form
+function toggleSignUpForm() {
+    const signUpForm = document.getElementById("signUpForm");
+    if (signUpForm.style.display === "flex") {
+        signUpForm.style.display = "none"; // Hide the form
+    } else {
+        signUpForm.style.display = "flex"; // Show the form
+        signUpForm.style.justifyContent = "center"; // Center it
+        signUpForm.style.alignItems = "center";
+    }
+}
+
+
+</script>
+
+
+
+  <style>
+    /* styles.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff; /* White background for a clean look */
+  border-bottom: 2px solid #004aad; /* Blue border for professionalism */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px; /* Adjust the height for a neat appearance */
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #004aad; /* Blue link color */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ad9bff; /* Eye-catching hover effect */
+}
+
+
+.nav-buttons li a{
+  padding: 8px 15px;
+  border: 2px solid #004aad;
+  color: #004aad;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons li a:hover {
+  background-color: #004aad;
+  color: white;
+}
+
+.nav-buttons li a:last-child {
+    margin-right: 50px; /* Pushes the last item (Login) to the right side */
+}
+
+.nav-buttons .btn-primary {
+  background-color: #004aad;
+  color: white;
+  margin-left: 10px;
+}
+
+.nav-buttons .btn-primary:hover {
+     color: #004aad; 
+  background-color: white; /* Add a secondary brand color for hover effect */
+}
+
+
+
+.nav-links li a {
+  text-decoration: none;
+  color: #004aad; /* Blue color matching the logo */
+  font-family: 'Times New Roman', serif; /* Elegant serif font */
+  font-weight: bold;
+  font-size: 18px; /* Slightly larger for readability */
+  text-transform: uppercase; /* All uppercase like the provided text */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #98aaf8; /* Eye-catching hover effect */
+}
+
+.nav-buttons .btn {
+  padding: 8px 15px;
+  /* color: white;
+  border: 2px solid #004aad; 
+  color: white;
+  color: #004aad; */
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Times New Roman', serif; /* Same font for buttons */
+  font-size: 16px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hero Banner Section */
+.hero-banner {
+  background: linear-gradient(to right, #004aad, #0074d9); /* Professional gradient matching the logo */
+  color: white;
+  text-align: center;
+  padding: 40px 20px; /* Reduced padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Reduced height to 60% of the viewport */
+  border-bottom: 4px solid #00307a; /* Border under the banner */
+
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 span {
+  background: linear-gradient(to right, #ffffff, #004aad); /* White to #004aad gradient */
+  -webkit-background-clip: text; /* Ensures the gradient is clipped to the text */
+  background-clip: text; /* For modern browsers */
+  color: transparent; /* Makes the text color transparent to show the gradient */
+}
+
+.hero-content h1 {
+  font-size: 90px; /* Smaller heading size */
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', serif; /* Elegant font */
+  text-shadow:  #004aad /* Depth effect */
+}
+
+.hero-banner p {
+  font-size: 22px; /* Increase font size */
+  margin-bottom: 10px; /* Reduce bottom margin */
+  font-weight: 300; /* Lighter font weight for a clean look */
+  line-height: 1.6; /* Improve readability with increased line height */
+}
+
+
+/* .hero-content p {
+  font-size: 16px; /* Smaller paragraph text */
+  margin-bottom: 20px;
+  font-weight: 300;
+} */
+
+.hero-buttons .btn {
+  padding: 8px 15px; /* Slightly smaller buttons */
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+}
+
+.hero-buttons .btn:hover {
+  background-color: white;
+  color: #004aad; /* Blue text on hover */
+}
+
+.hero-buttons .btn-primary {
+  background-color: white;
+  color: #004aad;
+}
+
+.hero-buttons .btn-primary:hover {
+  background-color: #e7caff; /* Hover effect with secondary color */
+  color: white;
+}
+
+/* Hero Image Styling */
+/* Hero Banner Section */
+.hero-banner {
+  background: linear-gradient(to right, #004aad, #0074d9); /* Gradient matching the logo */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 20px 20px; /* Appropriate padding for spacing */
+  height: 55vh; /* Adjusted to a balanced height for a professional banner */
+  gap: 20px;
+  position: relative;
+  overflow: hidden; /* Prevents any image overflow */
+}
+
+/* Hero Content Styling */
+.hero-banner {
+  background: linear-gradient(to right, #00307a, #0074d9); /* Darker blue gradient */
+  color: white;
+  display: flex;
+  align-items: center;  /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  text-align: center; /* Center the text */
+  height: 65vh; /* Banner height */
+  padding: 0 20px; /* Remove unnecessary padding */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero Content Styling */
+.hero-content {
+  z-index: 2; /* Ensure content stays above the image */
+}
+
+
+.hero-content h1 span {
+  background: linear-gradient(to right, #ffffff, #00307a); /* White to dark blue gradient */
+  margin-bottom: 5px;
+  -webkit-background-clip: text; /* Ensures the gradient is clipped to the text */
+  background-clip: text; /* For modern browsers */
+  color: transparent; /* Makes the text color transparent to show the gradient */
+}
+
+.hero-content h1 {
+  margin-bottom: 5px; /* Reduced margin between heading and paragraph */
+}
+
+.hero-content p {
+  font-size: 20px; /* Increase font size */
+  margin-top: -0; /* Remove top margin to bring it closer to the heading */
+  margin-bottom: 20px; /* Reduce bottom margin */
+  font-weight: 300;
+  line-height: 1.6; /* Improve readability */
+}
+
+
+.hero-buttons .btn {
+  padding: 10px 20px;
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+}
+
+.hero-buttons .btn:hover {
+  background-color: white;
+  color: #004aad;
+}
+
+.hero-buttons .btn-primary {
+  background-color: white;
+  color: #004aad;
+}
+
+.hero-buttons .btn-primary:hover {
+  background-color: #d1c2fa;
+  color: white;
+}
+
+/* Hero Image Styling */
+.hero-image {
+  position: absolute; /* Position the image absolutely */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Place image behind the text */
+}
+
+.hero-image img {
+  width: 100%; /* Ensures the image stretches across the container */
+  height: 100%; /* Ensures the image fills the container vertically */
+  object-fit: cover; /* Ensures image covers the container, cropping if necessary */
+  object-position: center center; /* Centers the image */
+}
+
+
+/* product */
+
+/* Product Section Styling */
+.product-section {
+  padding: 40px 20px;
+  margin-bottom: 500px;
+  margin: 90px;
+  background-color: #f9f9f9; /* Light gray background for contrast */
+  text-align: center;
+  border-bottom: 4px solid #00307a; /* Border under the banner */
+
+}
+
+.product-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #00307a; /* Dark blue from the color palette */
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures the products wrap to the next line if needed */
+}
+
+.product-item {
+  background-color: #ffffff; /* White background for each product item */
+  padding: 15px;  /* Reduced padding for smaller product items */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 220px;  /* Reduced width for smaller product items */
+  text-align: left;
+}
+
+.product-item img {
+  width: 100%;
+  height: 200px;  /* Fixed height for the product images */
+  object-fit: cover;
+  border-bottom: 2px solid #00307a; /* Line under the image to emphasize it */
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.product-item h3 {
+  font-size: 18px;  /* Smaller font size for product name */
+  margin-bottom: 10px;
+  color: #00307a; /* Dark blue from the color palette */
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+}
+
+.product-item .price {
+  font-size: 16px; /* Smaller font size for price */
+  color: #0074d9; /* Blue from the color palette */
+  margin-bottom: 10px;
+}
+
+.product-item .description {
+  font-size: 13px;  /* Smaller font size for description */
+  color: #666666; /* Dark gray for description text */
+  margin-bottom: 15px;  /* Less margin between description and button */
+}
+
+.product-item .btn {
+  display: inline-block;
+  padding: 8px 16px;  /* Reduced padding for the button */
+  background-color: #00307a; /* Dark blue button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.product-item .btn:hover {
+  background-color: #0074d9; /* Light blue on hover */
+}
+
+/* Hide additional products initially */
+.product-item.hidden {
+  display: none;
+}
+
+/* Style for Shop button */
+.shop-btn {
+  padding: 10px 20px;
+  background-color: #00307a;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.shop-btn:hover {
+  background-color: #0074d9;
+}
+
+/* Contact */
+/* General Styling for Contact Form */
+.contact-form-section {
+    display: none; /* Initially hidden */
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    font-family: 'Arial', sans-serif;
+    color: #004aad; /* Primary color from the palette */
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.contact-form .submit-btn {
+    background-color: #004aad; /* Primary color from the palette */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #00397c; /* Darker shade for hover effect */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #004aad; /* Focus color */
+    outline: none;
+}
+
+/* Hidden class for initial visibility control */
+.hidden {
+    display: none;
+}
+
+/* Footer Styles */
+/* Footer Styles */
+#footer {
+    background-color: #004aad; /* Main color from your palette */
+    color: white;
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to the body text */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 700; /* Bold with Montserrat font */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to headings */
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #00397c; /* Slightly darker color for hover effect */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    background-color: #00397c; /* A darker shade of the main color */
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for bottom text */
+}
+
+/* About Us Section Styling */
+/* General Font Styling for About Us Section */
+body {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font globally */
+}
+
+/* About Us Section Styling */
+.about-us-section {
+    display: none; /* Hidden initially */
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat to the section */
+}
+
+.about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transform: translateY(50px); /* Smooth animation to make it more appealing */
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-us-container:hover {
+    transform: translateY(0);
+}
+
+.about-us-content h1 {
+    color: #004aad;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for the heading */
+}
+
+.about-us-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.store-location h2 {
+    color: #004aad;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for section title */
+}
+
+.store-location p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 350px; /* Smaller map for better fit */
+    border-radius: 10px;
+    border: 2px solid #004aad;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    color: #004aad;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.testimonial {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial p {
+    font-size: 18px;
+    color: #555;
+}
+
+.testimonial span {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    color: #004aad;
+    font-weight: bold;
+}
+
+.testimonial p:before {
+    content: "“";
+    font-size: 30px;
+    color: #004aad;
+    margin-right: 10px;
+}
+
+.testimonial p:after {
+    content: "”";
+    font-size: 30px;
+    color: #004aad;
+    margin-left: 10px;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Login Styling */
+
+
+/* Login Form Section */
+.login-form-section {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Login Form Container */
+.login-form-container {
+    background-color: #fefefe; /* White background */
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-family: 'Montserrat', sans-serif; /* Given font */
+    text-align: center;
+}
+
+/* Login Form Heading */
+.login-form-container h2 {
+    font-size: 24px;
+    color: #004aad; /* Primary color */
+    margin-bottom: 20px;
+}
+
+/* Form Label */
+.login-form-container label {
+    font-size: 16px;
+    color: #004aad; /* Primary color */
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Form Input Fields */
+.login-form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit Button */
+.login-form-container .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #004aad; /* Primary color */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form-container .submit-btn:hover {
+    background-color: #003c8b; /* Darker blue */
+}
+
+/* Close Button */
+.login-form-container .close-btn {
+    background-color: #ccc;
+    color: #004aad;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.login-form-container .close-btn:hover {
+    background-color: #aaa;
+}
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Layout for large screens (Desktops) */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Banner */
+.hero {
+    background-image: url('your-banner-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Mobile Devices (Portrait and smaller tablets) */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .product-section {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+        padding: 20px 0;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+/* Tablets and Small Desktops */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .product-section {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Large Desktops and Screens */
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+}
+
+
+  </style>
+</body>
+</html>
